@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyFreeRecipe</title>
+</head>
+<body>
+    <div class="container">
+        <h1> My Recipe</h1>
+        <form id="recipe-form">
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <textarea id="recipe-ingredients" placeholder="Ingredients (comma-separated)" required></textarea>
+            <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+            <input type="file" id="recipe-image" accept="image/*" required>
+            <button type="submit">Add Recipe</button>
+        </form>
+        <ul id="recipe-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
